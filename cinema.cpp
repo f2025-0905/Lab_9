@@ -34,7 +34,7 @@ int main() {
     cout << "Enter seat no. to reserve: ";
     cin >> reservedSeat;
     
-    while (reservedSeat%10 > coloumns or reservedSeat/10 > rows or reservedSeat < 11 || arr[reservedSeat] == 'R'){
+    while ((reservedSeat%10 > coloumns or reservedSeat/10 > rows or reservedSeat < 11 || arr[reservedSeat] == 'R') && reservedSeat != 0){
         
         if (arr[reservedSeat] == 'R'){
            cout << "Already reserved\n";
